@@ -14,6 +14,11 @@ DIRECT_URLS = [
     "https://raw.githubusercontent.com/jackszb/sukka-surge/main/non_ip/domestic.json",
     "https://raw.githubusercontent.com/jackszb/sukka-surge/main/non_ip/direct.json",
     "https://raw.githubusercontent.com/jackszb/sukka-surge/main/non_ip/lan.json",
+    "https://raw.githubusercontent.com/Exslr/sing-box_rulesets/main/singbox/source/dns/alibaba.json",
+    "https://raw.githubusercontent.com/Exslr/sing-box_rulesets/main/singbox/source/dns/baidu.json",
+    "https://raw.githubusercontent.com/Exslr/sing-box_rulesets/main/singbox/source/dns/bilibili.json",
+    "https://raw.githubusercontent.com/Exslr/sing-box_rulesets/main/singbox/source/dns/bytedance.json",
+    "https://raw.githubusercontent.com/Exslr/sing-box_rulesets/main/singbox/source/dns/tencent.json",
 ]
 
 PROXY_URLS = [
