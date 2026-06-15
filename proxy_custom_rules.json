@@ -1,6 +1,17 @@
 {
   "version": 4,
   "rules": [
-    
+    {
+      "domain_suffix": [
+        "sing-box.sagernet.org",
+        "lala.im",
+        "blog.chaos.run",
+        "jackszb.top",
+        "app.cloudcone.com",
+        "bejson.com",
+        "xclient.info",
+        "https://sing-box-dashboard.sagernet.org"
+      ]
+    }
   ]
 }
