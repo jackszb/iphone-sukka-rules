@@ -71,9 +71,24 @@ def save_json_and_compile(master_rules, json_file, srs_file):
 
     final_rule = {}
 
+    # ✅ allowed rule keys (include domain_regex)
+    allowed_keys = {
+        "domain",
+        "domain_suffix",
+        "domain_keyword",
+        "domain_regex",
+        "ip_cidr",
+        "ip"
+    }
+
     for key, values in master_rules.items():
         unique_values = sorted(set(values))  # dedupe + sort
-        if unique_values:
+
+        if not unique_values:
+            continue
+
+        # only keep supported sing-box v4 fields
+        if key in allowed_keys:
             final_rule[key] = unique_values
 
     data = {
