@@ -17,7 +17,20 @@ DIRECT_URLS = [
 ]
 
 PROXY_URLS = [
-    "https://raw.githubusercontent.com/jackszb/sukka/main/proxy_custom_rules.json",
+  "https://raw.githubusercontent.com/jackszb/sukka-surge/main/domainset/cdn.json",
+  "https://raw.githubusercontent.com/jackszb/sukka-surge/main/domainset/download.json",
+  "https://raw.githubusercontent.com/jackszb/sukka-surge/main/domainset/icloud_private_relay.json",
+  "https://raw.githubusercontent.com/jackszb/sukka-surge/main/non_ip/ai.json",
+  "https://raw.githubusercontent.com/jackszb/sukka-surge/main/non_ip/apple_intelligence.json",
+  "https://raw.githubusercontent.com/jackszb/sukka-surge/main/non_ip/apple_services.json",
+  "https://raw.githubusercontent.com/jackszb/sukka-surge/main/non_ip/microsoft.json",
+  "https://raw.githubusercontent.com/jackszb/sukka-surge/main/non_ip/cdn.json",
+  "https://raw.githubusercontent.com/jackszb/sukka-surge/main/non_ip/global.json",
+  "https://raw.githubusercontent.com/jackszb/sukka-surge/main/non_ip/my_proxy.json",
+  "https://raw.githubusercontent.com/jackszb/sukka-surge/main/non_ip/my_tw.json",
+  "https://raw.githubusercontent.com/jackszb/sukka-surge/main/non_ip/my_us.json",
+  "https://raw.githubusercontent.com/jackszb/sukka-surge/main/non_ip/stream.json",
+  "https://raw.githubusercontent.com/jackszb/sukka-surge/main/non_ip/telegram.json",
 ]
 
 REJECT_URLS = [
@@ -152,7 +165,5 @@ def main():
     save_json_and_compile(ip, "ip_rules.json", "ip_rules.srs")
 
     print("\n=== ALL DONE ===")
-
-
 if __name__ == "__main__":
     main()
