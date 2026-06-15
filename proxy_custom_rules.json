@@ -1,0 +1,20 @@
+{
+  "version": 4,
+  "rules": [
+    {
+      "domain": [
+        "test.com"
+      ],
+      "domain_suffix": [
+        ".cn"
+      ],
+      "domain_keyword": [
+        "test"
+      ],
+      "ip_cidr": [
+        "10.0.0.0/24",
+        "192.168.0.1"
+      ]
+    }
+  ]
+}
