@@ -22,7 +22,6 @@ DIRECT_URLS = [
     "https://raw.githubusercontent.com/Exslr/sing-box_rulesets/main/singbox/source/dns/qihoo360.json",
     "https://raw.githubusercontent.com/Exslr/sing-box_rulesets/main/singbox/source/dns/xiaomi.json",
     "https://raw.githubusercontent.com/jackszb/rules-build/main/rules-src/app-direct.json",
-    "https://raw.githubusercontent.com/jackszb/rules-build/main/rules-src/china-simple.json",
 ]
 
 PROXY_URLS = [
