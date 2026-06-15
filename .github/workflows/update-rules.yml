@@ -22,11 +22,11 @@ jobs:
         run: |
           bash <(curl -fsSL https://sing-box.app/install.sh)
 
-      - name: Run script to merge and compile
+      - name: Run script
         run: python merge_and_compile.py
 
       # -----------------------------
-      # Commit ALL generated files
+      # Commit ALL outputs (JSON + SRS)
       # -----------------------------
       - name: Commit and push changes
         run: |
@@ -34,10 +34,10 @@ jobs:
           git config --local user.name "github-actions[bot]"
 
           git add \
-            direct_custom_rules.json direct_rules.srs \
-            proxy_custom_rules.json proxy_rules.srs \
-            reject_custom_rules.json reject_rules.srs \
-            ip_custom_rules.json ip_rules.srs
+            direct_rules.json direct_rules.srs \
+            proxy_rules.json proxy_rules.srs \
+            reject_rules.json reject_rules.srs \
+            ip_rules.json ip_rules.srs
 
-          git commit -m "Auto-update: direct/proxy/reject/ip rules + SRS compiled" || echo "No changes to commit"
+          git commit -m "Auto-update: merged JSON + compiled SRS rules" || echo "No changes to commit"
           git push
