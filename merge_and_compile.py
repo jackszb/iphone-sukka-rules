@@ -20,7 +20,7 @@ DIRECT_URLS = [
     "https://raw.githubusercontent.com/Exslr/sing-box_rulesets/main/singbox/source/dns/bytedance.json",
     "https://raw.githubusercontent.com/Exslr/sing-box_rulesets/main/singbox/source/dns/tencent.json",
     "https://raw.githubusercontent.com/jackszb/rules-build/main/rules-src/app-direct.json",
-    "https://raw.githubusercontent.com/x24thkk/rule-set/main/rule-set/merged-domain-direct.json",
+    "https://raw.githubusercontent.com/jackszb/rules-build/main/rules-src/china-simple.json",
 ]
 
 PROXY_URLS = [
