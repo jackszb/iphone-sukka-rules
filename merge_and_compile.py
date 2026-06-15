@@ -8,12 +8,12 @@ import urllib.request
 # -----------------------------
 
 DIRECT_URLS = [
-    "https://ruleset.skk.moe/sing-box/non_ip/domestic.json",
-    "https://ruleset.skk.moe/sing-box/non_ip/apple_cn.json",
-    "https://ruleset.skk.moe/sing-box/non_ip/apple_cdn.json",
-    "https://ruleset.skk.moe/sing-box/non_ip/microsoft_cdn.json",
-    "https://ruleset.skk.moe/sing-box/non_ip/direct.json",
-    "https://ruleset.skk.moe/sing-box/non_ip/lan.json",
+    "https://raw.githubusercontent.com/jackszb/sukka-surge/main/non_ip/apple_cn.json",
+    "https://raw.githubusercontent.com/jackszb/sukka-surge/main/non_ip/apple_cdn.json",
+    "https://raw.githubusercontent.com/jackszb/sukka-surge/main/non_ip/microsoft_cdn.json",
+    "https://raw.githubusercontent.com/jackszb/sukka-surge/main/non_ip/domestic.json",
+    "https://raw.githubusercontent.com/jackszb/sukka-surge/main/non_ip/direct.json",
+    "https://raw.githubusercontent.com/jackszb/sukka-surge/main/non_ip/lan.json",
 ]
 
 PROXY_URLS = [
