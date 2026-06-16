@@ -28,6 +28,8 @@ PROXY_URLS = [
   "https://raw.githubusercontent.com/jackszb/sukka/main/proxy_custom_rules.json",
   "https://raw.githubusercontent.com/jackszb/sukka-surge/main/domainset/cdn.json",
   "https://raw.githubusercontent.com/jackszb/sukka-surge/main/domainset/download.json",
+  "https://raw.githubusercontent.com/jackszb/sukka-surge/main/domainset/game-download.json",
+  "https://raw.githubusercontent.com/jackszb/sukka-surge/main/domainset/speedtest.json",
   "https://raw.githubusercontent.com/jackszb/sukka-surge/main/domainset/icloud_private_relay.json",
   "https://raw.githubusercontent.com/jackszb/sukka-surge/main/non_ip/ai.json",
   "https://raw.githubusercontent.com/jackszb/sukka-surge/main/non_ip/apple_intelligence.json",
