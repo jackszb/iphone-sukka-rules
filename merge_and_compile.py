@@ -21,7 +21,7 @@ DIRECT_URLS = [
     "https://raw.githubusercontent.com/Exslr/sing-box_rulesets/main/singbox/source/dns/tencent.json",
     "https://raw.githubusercontent.com/Exslr/sing-box_rulesets/main/singbox/source/dns/qihoo360.json",
     "https://raw.githubusercontent.com/Exslr/sing-box_rulesets/main/singbox/source/dns/xiaomi.json",
-    "https://raw.githubusercontent.com/jackszb/rules-build/main/rules-src/app-direct.json",
+    "https://raw.githubusercontent.com/jackszb/rules-set/main/rule-set/merged-domain-direct.json",
 ]
 
 PROXY_URLS = [
@@ -43,7 +43,7 @@ PROXY_URLS = [
   "https://raw.githubusercontent.com/jackszb/sukka-surge/main/non_ip/stream.json",
   "https://raw.githubusercontent.com/jackszb/sukka-surge/main/non_ip/telegram.json",
   "https://raw.githubusercontent.com/jackszb/adguard-rules/main/json/filter_37_NoGoogle_filter.json",
-  "https://raw.githubusercontent.com/jackszb/rules-build/main/rules-src/app-proxy.json",
+  "https://raw.githubusercontent.com/jackszb/rules-set/main/rule-set/merged-domain-proxy.json",
   "https://raw.githubusercontent.com/jackszb/rules-build/main/rules-src/porn.json",
 ]
 
