@@ -15,6 +15,7 @@ DIRECT_URLS = [
     "https://raw.githubusercontent.com/jackszb/sukka-surge/main/non_ip/direct.json",
     "https://raw.githubusercontent.com/jackszb/sukka-surge/main/non_ip/lan.json",
     "https://raw.githubusercontent.com/jackszb/rules-set/main/rule-set/merged-domain-direct.json",
+    "https://raw.githubusercontent.com/jackszb/cn/main/cn.json",
 ]
 
 PROXY_URLS = [
