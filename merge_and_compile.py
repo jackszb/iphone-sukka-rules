@@ -36,6 +36,7 @@ PROXY_URLS = [
   "https://raw.githubusercontent.com/jackszb/sukka-surge/main/non_ip/stream.json",
   "https://raw.githubusercontent.com/jackszb/sukka-surge/main/non_ip/telegram.json",
   "https://raw.githubusercontent.com/jackszb/rules-set/main/rule-set/merged-domain-proxy.json",
+  "https://raw.githubusercontent.com/jackszb/gfw/main/gfw.json",
 ]
 
 REJECT_URLS = [
