@@ -41,10 +41,8 @@ PROXY_URLS = [
 
 REJECT_URLS = [
     "https://raw.githubusercontent.com/jackszb/sukka-surge/main/domainset/reject.json",
-    "https://raw.githubusercontent.com/jackszb/sukka-surge/main/domainset/reject_extra.json",
-    "https://raw.githubusercontent.com/jackszb/sukka-surge/main/domainset/reject_phishing.json",
-    "https://raw.githubusercontent.com/jackszb/sukka-surge/main/non_ip/reject-drop.json",
-    "https://raw.githubusercontent.com/jackszb/sukka-surge/main/non_ip/reject-no-drop.json",
+    "https://raw.githubusercontent.com/jackszb/osid/main/rules/hagezi_multi.json",
+    "https://raw.githubusercontent.com/jackszb/osid/main/rules/oisd_big.json",
 ]
 
 IP_URLS = [
