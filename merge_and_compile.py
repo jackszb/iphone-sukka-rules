@@ -2,6 +2,7 @@ import json
 import ssl
 import subprocess
 import urllib.request
+import ipaddress
 
 # -----------------------------
 # URL LISTS
@@ -19,24 +20,24 @@ DIRECT_URLS = [
 ]
 
 PROXY_URLS = [
-  "https://raw.githubusercontent.com/jackszb/sukka/main/proxy_custom_rules.json",
-  "https://raw.githubusercontent.com/jackszb/sukka-surge/main/domainset/cdn.json",
-  "https://raw.githubusercontent.com/jackszb/sukka-surge/main/domainset/download.json",
-  "https://raw.githubusercontent.com/jackszb/sukka-surge/main/domainset/game-download.json",
-  "https://raw.githubusercontent.com/jackszb/sukka-surge/main/domainset/speedtest.json",
-  "https://raw.githubusercontent.com/jackszb/sukka-surge/main/non_ip/ai.json",
-  "https://raw.githubusercontent.com/jackszb/sukka-surge/main/non_ip/apple_intelligence.json",
-  "https://raw.githubusercontent.com/jackszb/sukka-surge/main/non_ip/apple_services.json",
-  "https://raw.githubusercontent.com/jackszb/sukka-surge/main/non_ip/microsoft.json",
-  "https://raw.githubusercontent.com/jackszb/sukka-surge/main/non_ip/cdn.json",
-  "https://raw.githubusercontent.com/jackszb/sukka-surge/main/non_ip/global.json",
-  "https://raw.githubusercontent.com/jackszb/sukka-surge/main/non_ip/my_proxy.json",
-  "https://raw.githubusercontent.com/jackszb/sukka-surge/main/non_ip/my_tw.json",
-  "https://raw.githubusercontent.com/jackszb/sukka-surge/main/non_ip/my_us.json",
-  "https://raw.githubusercontent.com/jackszb/sukka-surge/main/non_ip/stream.json",
-  "https://raw.githubusercontent.com/jackszb/sukka-surge/main/non_ip/telegram.json",
-  "https://raw.githubusercontent.com/jackszb/rules-set/main/rule-set/merged-domain-proxy.json",
-  "https://raw.githubusercontent.com/jackszb/gfw/main/gfw.json",
+    "https://raw.githubusercontent.com/jackszb/sukka/main/proxy_custom_rules.json",
+    "https://raw.githubusercontent.com/jackszb/sukka-surge/main/domainset/cdn.json",
+    "https://raw.githubusercontent.com/jackszb/sukka-surge/main/domainset/download.json",
+    "https://raw.githubusercontent.com/jackszb/sukka-surge/main/domainset/game-download.json",
+    "https://raw.githubusercontent.com/jackszb/sukka-surge/main/domainset/speedtest.json",
+    "https://raw.githubusercontent.com/jackszb/sukka-surge/main/non_ip/ai.json",
+    "https://raw.githubusercontent.com/jackszb/sukka-surge/main/non_ip/apple_intelligence.json",
+    "https://raw.githubusercontent.com/jackszb/sukka-surge/main/non_ip/apple_services.json",
+    "https://raw.githubusercontent.com/jackszb/sukka-surge/main/non_ip/microsoft.json",
+    "https://raw.githubusercontent.com/jackszb/sukka-surge/main/non_ip/cdn.json",
+    "https://raw.githubusercontent.com/jackszb/sukka-surge/main/non_ip/global.json",
+    "https://raw.githubusercontent.com/jackszb/sukka-surge/main/non_ip/my_proxy.json",
+    "https://raw.githubusercontent.com/jackszb/sukka-surge/main/non_ip/my_tw.json",
+    "https://raw.githubusercontent.com/jackszb/sukka-surge/main/non_ip/my_us.json",
+    "https://raw.githubusercontent.com/jackszb/sukka-surge/main/non_ip/stream.json",
+    "https://raw.githubusercontent.com/jackszb/sukka-surge/main/non_ip/telegram.json",
+    "https://raw.githubusercontent.com/jackszb/rules-set/main/rule-set/merged-domain-proxy.json",
+    "https://raw.githubusercontent.com/jackszb/gfw/main/gfw.json",
 ]
 
 REJECT_URLS = [
@@ -51,7 +52,6 @@ IP_URLS = [
     "https://raw.githubusercontent.com/jackszb/sukka-surge/main/ip/china_ip_ipv6.json",
     "https://raw.githubusercontent.com/jackszb/sukka/main/lan.json",
 ]
-
 
 # -----------------------------
 # Fetch & merge
@@ -88,17 +88,45 @@ def process_urls(urls, ssl_context):
 
 
 # -----------------------------
+# IP SORT (核心新增逻辑)
+# -----------------------------
+
+def sort_ip_list(values):
+    ipv4 = []
+    ipv6 = []
+
+    seen = set()
+
+    for v in values:
+        if v in seen:
+            continue
+        seen.add(v)
+
+        try:
+            ip_obj = ipaddress.ip_network(v, strict=False)
+
+            if isinstance(ip_obj, ipaddress.IPv4Network):
+                ipv4.append(ip_obj)
+            else:
+                ipv6.append(ip_obj)
+
+        except Exception:
+            # 如果不是合法 IP，直接忽略（避免崩）
+            continue
+
+    ipv4_sorted = sorted(ipv4, key=lambda x: (int(x.network_address), x.prefixlen))
+    ipv6_sorted = sorted(ipv6, key=lambda x: (int(x.network_address), x.prefixlen))
+
+    return [str(x) for x in ipv4_sorted + ipv6_sorted]
+
+
+# -----------------------------
 # Save JSON + compile SRS
 # -----------------------------
 
 def save_json_and_compile(master_rules, json_file, srs_file):
-    """
-    dedupe + sort + output json + compile srs
-    """
-
     final_rule = {}
 
-    # ✅ allowed rule keys (include domain_regex)
     allowed_keys = {
         "domain",
         "domain_suffix",
@@ -109,14 +137,16 @@ def save_json_and_compile(master_rules, json_file, srs_file):
     }
 
     for key, values in master_rules.items():
-        unique_values = sorted(set(values))  # dedupe + sort
-
-        if not unique_values:
+        if not values:
             continue
 
-        # only keep supported sing-box v4 fields
         if key in allowed_keys:
-            final_rule[key] = unique_values
+
+            # ✅ IP 特殊处理：IPv4 → IPv6
+            if key in ("ip", "ip_cidr"):
+                final_rule[key] = sort_ip_list(values)
+            else:
+                final_rule[key] = sorted(set(values))
 
     data = {
         "version": 4,
@@ -124,7 +154,7 @@ def save_json_and_compile(master_rules, json_file, srs_file):
     }
 
     # -----------------------------
-    # 1. SAVE JSON
+    # SAVE JSON
     # -----------------------------
     with open(json_file, "w", encoding="utf-8") as f:
         json.dump(data, f, indent=2, ensure_ascii=False)
@@ -132,7 +162,7 @@ def save_json_and_compile(master_rules, json_file, srs_file):
     print(f"  JSON saved: {json_file}")
 
     # -----------------------------
-    # 2. COMPILE SRS
+    # COMPILE SRS
     # -----------------------------
     try:
         result = subprocess.run(
@@ -174,5 +204,7 @@ def main():
     save_json_and_compile(ip, "ip_rules.json", "ip_rules.srs")
 
     print("\n=== ALL DONE ===")
+
+
 if __name__ == "__main__":
     main()
