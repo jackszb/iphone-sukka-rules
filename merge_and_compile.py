@@ -41,9 +41,8 @@ PROXY_URLS = [
 ]
 
 REJECT_URLS = [
-    "https://raw.githubusercontent.com/jackszb/adguard-rules/main/json/easylist_easylist_adservers.json",
+    "https://raw.githubusercontent.com/jackszb/easy/main/rules/easylist.json",
     "https://raw.githubusercontent.com/jackszb/osid/main/rules/oisd_big.json",
-    "https://raw.githubusercontent.com/jackszb/sukka/main/surge-reject.json",
     "https://raw.githubusercontent.com/jackszb/sukka/main/httpdns-cn.json",
 ]
 
