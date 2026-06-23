@@ -60,6 +60,7 @@
         "apd-pcdnvodstat.teg.tencent-cloud.net",
         "apd-pcdnwxlogin.teg.tencent-cloud.net",
         "api.smoot.apple.cn",
+        "app.viayoo.com",
         "appleintelligencefeedback.care.apple.com",
         "assets1.xboxlive.cn",
         "assets2.xboxlive.cn",
@@ -107,6 +108,7 @@
         "res-2.cdn.office.net",
         "res-h3.public.cdn.office.net",
         "res.cdn.office.net",
+        "res.viayoo.com",
         "router.asus.com",
         "setmeup.arubanetworks.com",
         "slife.xy-asia.com",
@@ -119,6 +121,7 @@
         "url.cn",
         "v.streaming.qq.com",
         "v5-dy-o-abtest.zjcdn.com",
+        "viayoo.com",
         "video-public-1258344701.shiply-cdn.qq.com",
         "video-search-1258344701.shiply-cdn.qq.com",
         "video-vip-1258344701.shiply-cdn.qq.com",
@@ -127,6 +130,7 @@
         "wup.imtt.qq.com",
         "www.intel.cn",
         "www.layuicdn.com",
+        "www.viayoo.com",
         "yoo.gtimg.com"
       ],
       "domain_suffix": [
