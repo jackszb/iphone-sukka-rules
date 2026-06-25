@@ -9,6 +9,7 @@ import ipaddress
 # -----------------------------
 
 DIRECT_URLS = [
+    "https://raw.githubusercontent.com/jackszb/sukka/main/direct_custom_rules.json",
     "https://raw.githubusercontent.com/jackszb/sukka-surge/main/domainset/apple_cdn.json",
     "https://raw.githubusercontent.com/jackszb/sukka-surge/main/non_ip/apple_cn.json",
     "https://raw.githubusercontent.com/jackszb/sukka-surge/main/non_ip/apple_cdn.json",
