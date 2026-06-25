@@ -42,6 +42,7 @@ REJECT_URLS = [
     "https://raw.githubusercontent.com/jackszb/sukka-surge/main/domainset/reject_phishing.json",
     "https://raw.githubusercontent.com/jackszb/sukka-surge/main/non_ip/reject-drop.json",
     "https://raw.githubusercontent.com/jackszb/sukka-surge/main/non_ip/reject-no-drop.json",
+    "https://raw.githubusercontent.com/TG-Twilight/AWAvenue-Ads-Rule/main/Filters/AWAvenue-Ads-Rule-Singbox.json",
 ]
 
 IP_URLS = [
