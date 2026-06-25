@@ -19,6 +19,7 @@ DIRECT_URLS = [
 ]
 
 PROXY_URLS = [
+    "https://raw.githubusercontent.com/jackszb/sukka/main/proxy_custom_rules.json",
     "https://raw.githubusercontent.com/jackszb/sukka-surge/main/domainset/cdn.json",
     "https://raw.githubusercontent.com/jackszb/sukka-surge/main/domainset/download.json",
     "https://raw.githubusercontent.com/jackszb/sukka-surge/main/domainset/game-download.json",
