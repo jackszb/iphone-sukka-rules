@@ -13,6 +13,7 @@ DIRECT_URLS = [
     "https://raw.githubusercontent.com/jackszb/sukka-surge/main/domainset/apple_cdn.json",
     "https://raw.githubusercontent.com/jackszb/sukka-surge/main/non_ip/apple_cn.json",
     "https://raw.githubusercontent.com/jackszb/sukka-surge/main/non_ip/apple_cdn.json",
+    "https://raw.githubusercontent.com/jackszb/sukka-surge/main/domainset/icloud_private_relay.json",
     "https://raw.githubusercontent.com/jackszb/sukka-surge/main/non_ip/microsoft_cdn.json",
     "https://raw.githubusercontent.com/jackszb/sukka-surge/main/non_ip/domestic.json",
     "https://raw.githubusercontent.com/jackszb/sukka-surge/main/non_ip/direct.json",
