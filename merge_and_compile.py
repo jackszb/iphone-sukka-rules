@@ -40,6 +40,7 @@ REJECT_URLS = [
     "https://raw.githubusercontent.com/jackszb/easy/main/rules/easylist.json",
     "https://raw.githubusercontent.com/jackszb/osid/main/rules/oisd_big.json",
     "https://raw.githubusercontent.com/jackszb/sukka/main/httpdns-cn.json",
+    "https://raw.githubusercontent.com/jackszb/sukka/main/AWAvenue-Ads-Rule.json",
 ]
 
 IP_URLS = [
