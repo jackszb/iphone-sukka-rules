@@ -9,38 +9,35 @@ import ipaddress
 # -----------------------------
 
 DIRECT_URLS = [
+    "https://raw.githubusercontent.com/jackszb/sukka-surge/main/domainset/apple_cdn.json",
     "https://raw.githubusercontent.com/jackszb/sukka-surge/main/non_ip/apple_cn.json",
     "https://raw.githubusercontent.com/jackszb/sukka-surge/main/non_ip/apple_cdn.json",
-    "https://raw.githubusercontent.com/jackszb/sukka-surge/main/non_ip/microsoft_cdn.json",
+    “https://raw.githubusercontent.com/jackszb/sukka-surge/main/non_ip/microsoft_cdn.json",
     "https://raw.githubusercontent.com/jackszb/sukka-surge/main/non_ip/domestic.json",
     "https://raw.githubusercontent.com/jackszb/sukka-surge/main/non_ip/direct.json",
     "https://raw.githubusercontent.com/jackszb/sukka-surge/main/non_ip/lan.json",
-    "https://raw.githubusercontent.com/jackszb/rules-set/main/rule-set/merged-domain-direct.json",
-    "https://raw.githubusercontent.com/jackszb/cn/main/cn.json",
-    "https://raw.githubusercontent.com/xmdhs/cn-domain-list/rule-set/ext-cn-list.json",
 ]
 
 PROXY_URLS = [
-    "https://raw.githubusercontent.com/jackszb/sukka/main/proxy_custom_rules.json",
     "https://raw.githubusercontent.com/jackszb/sukka-surge/main/domainset/cdn.json",
     "https://raw.githubusercontent.com/jackszb/sukka-surge/main/domainset/download.json",
     "https://raw.githubusercontent.com/jackszb/sukka-surge/main/domainset/game-download.json",
     "https://raw.githubusercontent.com/jackszb/sukka-surge/main/non_ip/ai.json",
     "https://raw.githubusercontent.com/jackszb/sukka-surge/main/non_ip/apple_intelligence.json",
     "https://raw.githubusercontent.com/jackszb/sukka-surge/main/non_ip/apple_services.json",
-    "https://raw.githubusercontent.com/jackszb/sukka-surge/main/non_ip/microsoft.json",
+    "https://raw.githubusercontent.com/jackszb/sukka-surge/main/non_ip/microsoft.json"
     "https://raw.githubusercontent.com/jackszb/sukka-surge/main/non_ip/cdn.json",
     "https://raw.githubusercontent.com/jackszb/sukka-surge/main/non_ip/global.json",
     "https://raw.githubusercontent.com/jackszb/sukka-surge/main/non_ip/stream.json",
     "https://raw.githubusercontent.com/jackszb/sukka-surge/main/non_ip/telegram.json",
-    "https://raw.githubusercontent.com/jackszb/gfw/main/gfw.json",
 ]
 
 REJECT_URLS = [
-    "https://raw.githubusercontent.com/jackszb/easy/main/rules/easylist.json",
-    "https://raw.githubusercontent.com/jackszb/osid/main/rules/oisd_big.json",
-    "https://raw.githubusercontent.com/jackszb/sukka/main/httpdns-cn.json",
-    "https://raw.githubusercontent.com/jackszb/sukka/main/AWAvenue-Ads-Rule.json",
+    "https://raw.githubusercontent.com/jackszb/sukka-surge/main/domainset/reject.json",
+    "https://raw.githubusercontent.com/jackszb/sukka-surge/main/domainset/reject_extra.json",
+    "https://raw.githubusercontent.com/jackszb/sukka-surge/main/domainset/reject_phishing.json",
+    "https://raw.githubusercontent.com/jackszb/sukka-surge/main/non_ip/reject-drop.json",
+    "https://raw.githubusercontent.com/jackszb/sukka-surge/main/non_ip/reject-no-drop.json",
 ]
 
 IP_URLS = [
