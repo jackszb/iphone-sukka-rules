@@ -17,6 +17,7 @@ DIRECT_URLS = [
     "https://raw.githubusercontent.com/jackszb/sukka-surge/main/non_ip/lan.json",
     "https://raw.githubusercontent.com/jackszb/rules-set/main/rule-set/merged-domain-direct.json",
     "https://raw.githubusercontent.com/jackszb/cn/main/cn.json",
+    "https://raw.githubusercontent.com/xmdhs/cn-domain-list/rule-set/ext-cn-list.json",
 ]
 
 PROXY_URLS = [
@@ -24,19 +25,14 @@ PROXY_URLS = [
     "https://raw.githubusercontent.com/jackszb/sukka-surge/main/domainset/cdn.json",
     "https://raw.githubusercontent.com/jackszb/sukka-surge/main/domainset/download.json",
     "https://raw.githubusercontent.com/jackszb/sukka-surge/main/domainset/game-download.json",
-    "https://raw.githubusercontent.com/jackszb/sukka-surge/main/domainset/speedtest.json",
     "https://raw.githubusercontent.com/jackszb/sukka-surge/main/non_ip/ai.json",
     "https://raw.githubusercontent.com/jackszb/sukka-surge/main/non_ip/apple_intelligence.json",
     "https://raw.githubusercontent.com/jackszb/sukka-surge/main/non_ip/apple_services.json",
     "https://raw.githubusercontent.com/jackszb/sukka-surge/main/non_ip/microsoft.json",
     "https://raw.githubusercontent.com/jackszb/sukka-surge/main/non_ip/cdn.json",
     "https://raw.githubusercontent.com/jackszb/sukka-surge/main/non_ip/global.json",
-    "https://raw.githubusercontent.com/jackszb/sukka-surge/main/non_ip/my_proxy.json",
-    "https://raw.githubusercontent.com/jackszb/sukka-surge/main/non_ip/my_tw.json",
-    "https://raw.githubusercontent.com/jackszb/sukka-surge/main/non_ip/my_us.json",
     "https://raw.githubusercontent.com/jackszb/sukka-surge/main/non_ip/stream.json",
     "https://raw.githubusercontent.com/jackszb/sukka-surge/main/non_ip/telegram.json",
-    "https://raw.githubusercontent.com/jackszb/rules-set/main/rule-set/merged-domain-proxy.json",
     "https://raw.githubusercontent.com/jackszb/gfw/main/gfw.json",
 ]
 
