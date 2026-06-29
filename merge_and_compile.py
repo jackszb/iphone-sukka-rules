@@ -9,33 +9,23 @@ import ipaddress
 # -----------------------------
 
 DIRECT_URLS = [
-    "https://raw.githubusercontent.com/jackszb/rules-set/main/rule-set/merged-domain-direct.json",
-    "https://raw.githubusercontent.com/jackszb/sukka-surge/main/domainset/apple_cdn.json",
+    "https://raw.githubusercontent.com/jackszb/direct/main/direct.json",
     "https://raw.githubusercontent.com/jackszb/sukka-surge/main/non_ip/apple_cn.json",
     "https://raw.githubusercontent.com/jackszb/sukka-surge/main/non_ip/apple_cdn.json",
-    "https://raw.githubusercontent.com/jackszb/sukka-surge/main/domainset/icloud_private_relay.json",
-    "https://raw.githubusercontent.com/jackszb/sukka-surge/main/non_ip/microsoft_cdn.json",
-    "https://raw.githubusercontent.com/jackszb/sukka-surge/main/non_ip/direct.json",
-    "https://raw.githubusercontent.com/jackszb/sukka-surge/main/non_ip/lan.json",
 ]
 
 PROXY_URLS = [
-    "https://raw.githubusercontent.com/jackszb/rules-set/main/rule-set/merged-domain-proxy.json",
+    "https://raw.githubusercontent.com/jackszb/proxy/main/proxy.json",
     "https://raw.githubusercontent.com/jackszb/sukka-surge/main/domainset/cdn.json",
     "https://raw.githubusercontent.com/jackszb/sukka-surge/main/non_ip/apple_intelligence.json",
     "https://raw.githubusercontent.com/jackszb/sukka-surge/main/non_ip/apple_services.json",
-    "https://raw.githubusercontent.com/jackszb/sukka-surge/main/non_ip/microsoft.json",
     "https://raw.githubusercontent.com/jackszb/sukka-surge/main/non_ip/cdn.json",
-    "https://raw.githubusercontent.com/jackszb/gfw/main/gfw.json",
 ]
 
 REJECT_URLS = [
     "https://raw.githubusercontent.com/jackszb/sukka-surge/main/domainset/reject.json",
     "https://raw.githubusercontent.com/jackszb/sukka-surge/main/domainset/reject_extra.json",
     "https://raw.githubusercontent.com/jackszb/sukka-surge/main/domainset/reject_phishing.json",
-    "https://raw.githubusercontent.com/jackszb/sukka-surge/main/non_ip/reject-drop.json",
-    "https://raw.githubusercontent.com/jackszb/sukka-surge/main/non_ip/reject-no-drop.json",
-    "https://raw.githubusercontent.com/TG-Twilight/AWAvenue-Ads-Rule/main/Filters/AWAvenue-Ads-Rule-Singbox.json",
 ]
 
 IP_URLS = [
