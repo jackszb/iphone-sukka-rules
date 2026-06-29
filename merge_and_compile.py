@@ -15,7 +15,7 @@ DIRECT_URLS = [
 ]
 
 PROXY_URLS = [
-    "https://raw.githubusercontent.com/jackszb/proxy/main/proxy.json",
+    "https://raw.githubusercontent.com/jackszb/rules-set/main/rule-set/merged-domain-proxy.json",
     "https://raw.githubusercontent.com/jackszb/sukka-surge/main/domainset/cdn.json",
     "https://raw.githubusercontent.com/jackszb/sukka-surge/main/non_ip/apple_intelligence.json",
     "https://raw.githubusercontent.com/jackszb/sukka-surge/main/non_ip/apple_services.json",
