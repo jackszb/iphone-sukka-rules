@@ -20,6 +20,7 @@ PROXY_URLS = [
     "https://raw.githubusercontent.com/jackszb/sukka-surge/main/non_ip/apple_intelligence.json",
     "https://raw.githubusercontent.com/jackszb/sukka-surge/main/non_ip/apple_services.json",
     "https://raw.githubusercontent.com/jackszb/sukka-surge/main/non_ip/cdn.json",
+    "https://raw.githubusercontent.com/jackszb/gfw/main/gfw.json",
 ]
 
 REJECT_URLS = [
