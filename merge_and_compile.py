@@ -18,12 +18,11 @@ PROXY_URLS = [
     "https://raw.githubusercontent.com/jackszb/app/main/json/youtube.json",
     "https://raw.githubusercontent.com/jackszb/adguard-rules/main/json/filter_37_NoGoogle_filter.json",
     "https://raw.githubusercontent.com/jackszb/app/main/json/chatgpt.json",
-    "https://raw.githubusercontent.com/jackszb/app/main/json/github.json",
-    "https://raw.githubusercontent.com/jackszb/rules-build/main/rules-src/claude.json",
 ]
 
 REJECT_URLS = [
     "https://raw.githubusercontent.com/jackszb/sukka/main/reject_custom_rules.json",
+    "https://raw.githubusercontent.com/jackszb/sukka/main/reject.json",
     "https://raw.githubusercontent.com/217heidai/adblockfilters/main/rules/adblocksingbox.json",
     "https://raw.githubusercontent.com/TG-Twilight/AWAvenue-Ads-Rule/main/Filters/AWAvenue-Ads-Rule-Singbox.json",
 ]
