@@ -131,7 +131,7 @@ def save_json_and_compile(master_rules, json_file, srs_file):
                 final_rule[key] = sorted(set(values))
 
     data = {
-        "version": 4,
+        "version": 3,
         "rules": [final_rule]
     }
 
