@@ -23,7 +23,7 @@ PROXY_URLS = [
 ]
 
 REJECT_URLS = [
-    "https://raw.githubusercontent.com/jackszb/ads-self/main/reject.json",
+    "https://raw.githubusercontent.com/jackszb/sukka/main/reject_custom_rules.json",
     "https://raw.githubusercontent.com/217heidai/adblockfilters/main/rules/adblocksingbox.json",
     "https://raw.githubusercontent.com/TG-Twilight/AWAvenue-Ads-Rule/main/Filters/AWAvenue-Ads-Rule-Singbox.json",
 ]
