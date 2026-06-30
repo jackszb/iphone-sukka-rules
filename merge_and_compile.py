@@ -9,30 +9,29 @@ import ipaddress
 # -----------------------------
 
 DIRECT_URLS = [
-    "https://raw.githubusercontent.com/jackszb/direct/main/direct.json",
-    "https://raw.githubusercontent.com/jackszb/sukka-surge/main/non_ip/apple_cn.json",
-    "https://raw.githubusercontent.com/jackszb/sukka-surge/main/non_ip/apple_cdn.json",
+    "https://raw.githubusercontent.com/jackszb/rules-build/main/rules-src/lan.json",
+    "https://raw.githubusercontent.com/jackszb/rules-build/main/rules-src/chinese-app.json",
+    "https://raw.githubusercontent.com/jackszb/cn/main/cn.json",
 ]
 
 PROXY_URLS = [
-    "https://raw.githubusercontent.com/jackszb/rules-set/main/rule-set/merged-domain-proxy.json",
-    "https://raw.githubusercontent.com/jackszb/sukka-surge/main/domainset/cdn.json",
-    "https://raw.githubusercontent.com/jackszb/sukka-surge/main/non_ip/apple_intelligence.json",
-    "https://raw.githubusercontent.com/jackszb/sukka-surge/main/non_ip/apple_services.json",
-    "https://raw.githubusercontent.com/jackszb/sukka-surge/main/non_ip/cdn.json",
-    "https://raw.githubusercontent.com/jackszb/gfw/main/gfw.json",
+    "https://raw.githubusercontent.com/jackszb/app/main/json/youtube.json",
+    "https://raw.githubusercontent.com/jackszb/adguard-rules/main/json/filter_37_NoGoogle_filter.json",
+    "https://raw.githubusercontent.com/jackszb/app/main/json/chatgpt.json",
+    "https://raw.githubusercontent.com/jackszb/app/main/json/github.json",
+    "https://raw.githubusercontent.com/jackszb/rules-build/main/rules-src/claude.json",
 ]
 
 REJECT_URLS = [
-    "https://raw.githubusercontent.com/jackszb/sukka-surge/main/domainset/reject.json",
-    "https://raw.githubusercontent.com/jackszb/sukka-surge/main/domainset/reject_extra.json",
-    "https://raw.githubusercontent.com/jackszb/sukka-surge/main/domainset/reject_phishing.json",
+    "https://raw.githubusercontent.com/jackszb/ads-self/main/reject.json",
+    "https://raw.githubusercontent.com/217heidai/adblockfilters/main/rules/adblocksingbox.json",
+    "https://raw.githubusercontent.com/TG-Twilight/AWAvenue-Ads-Rule/main/Filters/AWAvenue-Ads-Rule-Singbox.json",
 ]
 
 IP_URLS = [
-    "https://raw.githubusercontent.com/jackszb/sukka-surge/main/ip/china_ip.json",
-    "https://raw.githubusercontent.com/jackszb/sukka-surge/main/ip/china_ip_ipv6.json",
-    "https://raw.githubusercontent.com/jackszb/sukka/main/ip_custom_rules.json",
+    "https://raw.githubusercontent.com/jackszb/sukka-json/main/ip/china_ip.json",
+    "https://raw.githubusercontent.com/jackszb/sukka-json/main/ip/china_ip_ipv6.json",
+    "https://raw.githubusercontent.com/jackszb/sukka-json/main/ip/lan.json",
 ]
 
 # -----------------------------
