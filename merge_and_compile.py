@@ -14,6 +14,7 @@ DIRECT_URLS = [
 
 PROXY_URLS = [
     "https://raw.githubusercontent.com/jackszb/rules-build/main/rules-src/proxy.json",
+    "https://raw.githubusercontent.com/jackszb/iphone-rules/main/proxy_custom_rules.json",
 ]
 
 REJECT_URLS = [
