@@ -10,11 +10,13 @@ import ipaddress
 
 DIRECT_URLS = [
     "https://raw.githubusercontent.com/jackszb/rules-build/main/rules-src/direct.json",
+    "https://raw.githubusercontent.com/jackszb/rules-build/main/rules-src/ai-direct.json",
 ]
 
 PROXY_URLS = [
     "https://raw.githubusercontent.com/jackszb/rules-build/main/rules-src/proxy.json",
     "https://raw.githubusercontent.com/jackszb/iphone-rules/main/proxy_custom_rules.json",
+    "https://raw.githubusercontent.com/jackszb/rules-build/main/rules-src/ai-proxy.json",
 ]
 
 REJECT_URLS = [
