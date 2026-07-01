@@ -2,26 +2,6 @@
   "version": 3,
   "rules": [
     {
-      "domain": [
-        "aterm.me",
-        "blzddist1-a.akamaihd.net",
-        "console.gl-inet.com",
-        "download.jetbrains.com",
-        "file-igamecj.akamaized.net",
-        "homerouter.cpe",
-        "images-cn.ssl-images-amazon.com",
-        "instant.arubanetworks.com",
-        "mobile.hotspot",
-        "ntt.setup",
-        "officecdn-microsoft-com.akamaized.net",
-        "pi.hole",
-        "repeater.asus.com",
-        "router.asus.com",
-        "setmeup.arubanetworks.com",
-        "speedtest.macpaw.com",
-        "unifi",
-        "www-cdn.icloud.com.akadns.net"
-      ],
       "domain_suffix": [
         "00cdn.com",
         "10.in-addr.arpa",
@@ -718,6 +698,26 @@
         "zmzapi.net",
         "zmzfile.com",
         "zygbdszt.net.cn"
+      ],
+      "domain": [
+        "aterm.me",
+        "blzddist1-a.akamaihd.net",
+        "console.gl-inet.com",
+        "download.jetbrains.com",
+        "file-igamecj.akamaized.net",
+        "homerouter.cpe",
+        "images-cn.ssl-images-amazon.com",
+        "instant.arubanetworks.com",
+        "mobile.hotspot",
+        "ntt.setup",
+        "officecdn-microsoft-com.akamaized.net",
+        "pi.hole",
+        "repeater.asus.com",
+        "router.asus.com",
+        "setmeup.arubanetworks.com",
+        "speedtest.macpaw.com",
+        "unifi",
+        "www-cdn.icloud.com.akadns.net"
       ]
     }
   ]
