@@ -17,6 +17,7 @@ PROXY_URLS = [
 ]
 
 REJECT_URLS = [
+    "https://raw.githubusercontent.com/jackszb/iphone-rules/main/reject_custom_rules.json",
     "https://raw.githubusercontent.com/jackszb/sukka-clean/main/reject-I.json",
     "https://raw.githubusercontent.com/jackszb/sukka-clean/main/reject-II.json",
     "https://raw.githubusercontent.com/jackszb/clean/main/adblocksingbox.json",
