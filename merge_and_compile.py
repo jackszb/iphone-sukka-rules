@@ -10,17 +10,32 @@ import ipaddress
 # -----------------------------
 
 DIRECT_URLS = [
-    "https://raw.githubusercontent.com/jackszb/rules-build/main/rules-src/my-direct.json",
+    "https://raw.githubusercontent.com/jackszb/sukka-json/main/domainset/apple_cdn.json",
+    "https://raw.githubusercontent.com/jackszb/sukka-json/main/non_ip/apple_cn.json",
+    "https://raw.githubusercontent.com/jackszb/sukka-json/main/non_ip/apple_cdn.json",
+    "https://raw.githubusercontent.com/jackszb/sukka-json/main/non_ip/microsoft_cdn.json",
+    "https://raw.githubusercontent.com/jackszb/sukka-json/main/non_ip/domestic.json",
+    "https://raw.githubusercontent.com/jackszb/sukka-json/main/non_ip/direct.json",
+    "https://raw.githubusercontent.com/jackszb/sukka-json/main/non_ip/lan.json",
+    "https://raw.githubusercontent.com/jackszb/iphone-sukka-rules/main/direct_custom_rules.json",
 ]
 
 PROXY_URLS = [
-    "https://raw.githubusercontent.com/jackszb/rules-build/main/rules-src/my-proxy.json",
+    "https://raw.githubusercontent.com/jackszb/sukka-json/main/domainset/cdn.json",
+    "https://raw.githubusercontent.com/jackszb/sukka-json/main/non_ip/cdn.json",
+    "https://raw.githubusercontent.com/jackszb/sukka-json/main/non_ip/ai.json",
+    "https://raw.githubusercontent.com/jackszb/sukka-json/main/non_ip/apple_services.json",
+    "https://raw.githubusercontent.com/jackszb/sukka-json/main/domainset/icloud_private_relay.json",
+    "https://raw.githubusercontent.com/jackszb/sukka-json/main/non_ip/apple_intelligence.json",
+    "https://raw.githubusercontent.com/jackszb/sukka-json/main/non_ip/microsoft.json",
+    "https://raw.githubusercontent.com/jackszb/sukka-json/main/non_ip/global.json",
+    "https://raw.githubusercontent.com/jackszb/sukka-json/main/non_ip/stream.json",
+    "https://raw.githubusercontent.com/jackszb/sukka-json/main/non_ip/telegram.json",
 ]
 
 REJECT_URLS = [
-    "https://raw.githubusercontent.com/jackszb/sukka-clean/main/reject-I.json",
+    "https://raw.githubusercontent.com/jackszb/ads/main/adblock_reject.json",
     "https://raw.githubusercontent.com/jackszb/sukka-clean/main/reject-II.json",
-    "https://raw.githubusercontent.com/217heidai/adblockfilters/main/rules/adblocksingbox.json",
     "https://raw.githubusercontent.com/TG-Twilight/AWAvenue-Ads-Rule/main/Filters/AWAvenue-Ads-Rule-Singbox.json",
 ]
 
