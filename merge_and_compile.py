@@ -34,9 +34,7 @@ PROXY_URLS = [
 ]
 
 REJECT_URLS = [
-    "https://raw.githubusercontent.com/jackszb/ads/main/adblock_reject.json",
-    "https://raw.githubusercontent.com/jackszb/sukka-clean/main/reject-II.json",
-    "https://raw.githubusercontent.com/TG-Twilight/AWAvenue-Ads-Rule/main/Filters/AWAvenue-Ads-Rule-Singbox.json",
+    "https://raw.githubusercontent.com/jackszb/sukka-clean/main/reject-I.json",
 ]
 
 IP_URLS = [
