@@ -31,6 +31,7 @@ PROXY_URLS = [
     "https://raw.githubusercontent.com/jackszb/sukka-json/main/non_ip/global.json",
     "https://raw.githubusercontent.com/jackszb/sukka-json/main/non_ip/stream.json",
     "https://raw.githubusercontent.com/jackszb/sukka-json/main/non_ip/telegram.json",
+    "https://raw.githubusercontent.com/jackszb/iphone-sukka-rules/main/proxy_custom_rules.json",
 ]
 
 REJECT_URLS = [
